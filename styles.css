@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+box-sizing: border-box;
+
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  height: 100vh;
+  max-width: 1440px;
+}
+
+/* Conatainer for content and img*/
+.main_box {
+  width: 68%;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 20px auto;
+  border-radius: 15px;
+
+}
+
+
+/* container: content and statistics */
+.box_content {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 5px 0 0 5px;
+}
+
+
+h1 {
+  font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+    color: hsl(0, 0%, 100%);
+    margin-top: 1rem;
+    margin-bottom: 0;
+
+}
+
+h1 span {
+  color: hsl(277, 64%, 61%);
+}
+
+h2 {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: 400;
+  font-size: .8rem;
+  line-height: 25px;
+  color:hsla(0, 0%, 100%, 0.75);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+article p {
+  color: hsla(0, 0%, 100%, 0.6);
+  margin-top: .1rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+
+.box_content_statistics {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+h1,
+.box_content p,
+.box_content_statistics {
+  width: 75%;
+}
+
+
+/* container: image*/
+.box_img {
+  width: 50%;
+  background: hsl(277, 64%, 61%) url("images/image-header-desktop.jpg") no-repeat  top;
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 0;
+  padding-top: 41%;
+  border-radius: 0 5px 5px 0;
+}
+
+/****  Style Media Query  ****/
+
+@media screen and (max-width: 1279px) {
+  
+  .main_box {
+    width: 75%;
+  }
+
+  h1,
+  .box_content p,
+  .box_content_statistics {
+    width: 80%;
+  }
+   
+    
+  p {
+  
+    margin-bottom: 1rem;
+  }
+
+}
+
+
+
+.attribution {
+  margin-top: 1rem;
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+
+}
+
+
+
+
+@media screen and (max-width: 1028px) {
+  .main_box {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 919px) {
+
+  .main_box {
+    flex-direction: column-reverse;
+    width: 45%;
+    min-width: 300px;
+  
+  }
+
+  .box_content {
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+    padding: 20px;
+    
+  }
+
+  .box_img {
+    background: hsl(277, 64%, 61%) url("images/image-header-mobile.jpg") no-repeat  top;
+    background-size: cover;
+  background-blend-mode: multiply;
+    height: 0;
+    width: 100%;
+    padding-top: 70%;
+    border-radius: 15px 15px 0 0;
+  }
+
+
+  h1,
+  h2,
+  .box_content p,
+  .box_content_statistics {
+    width: 90%;
+    text-align: center;
+  }
+
+  .box_content_statistics {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 364px) {
+
+  .main_box {
+    width: 85%;
+    min-width: 300px;
+  }
+
+  .box_content {
+    padding: 10px;
+    
+  }
+
+
+  h1,
+  h2,
+  .box_content p,
+  .box_content_statistics {
+    width: 100%;
+  
+  }
+
+}
