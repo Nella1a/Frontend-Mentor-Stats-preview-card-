@@ -24,7 +24,6 @@ body {
   flex-flow: row nowrap;
   margin: 20px auto;
   border-radius: 15px;
-
 }
 
 
@@ -42,12 +41,11 @@ body {
 
 h1 {
   font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 1.8em;
-    color: hsl(0, 0%, 100%);
-    margin-top: 1rem;
-    margin-bottom: 0;
-
+  font-weight: 700;
+  font-size: 1.8em;
+  color: hsl(0, 0%, 100%);
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 h1 span {
@@ -90,8 +88,6 @@ h1,
   width: 75%;
 }
 
-
-
 .box_img {
   width: 50%;
   background: hsl(277, 64%, 61%) url("image-header-desktop.jpg") no-repeat  top;
@@ -103,9 +99,7 @@ h1,
 }
 
 
-
 @media screen and (max-width: 1279px) {
-  
   .main_box {
     width: 75%;
   }
@@ -118,15 +112,9 @@ h1,
    
     
   p {
-  
     margin-bottom: 1rem;
   }
-
 }
-
-
-
-
 
 
 @media screen and (max-width: 1028px) {
@@ -137,31 +125,27 @@ h1,
 
 
 @media screen and (max-width: 919px) {
-
   .main_box {
     flex-direction: column-reverse;
     width: 45%;
     min-width: 300px;
-  
   }
 
   .box_content {
     width: 100%;
     border-radius: 0 0 15px 15px;
     padding: 20px;
-    
   }
 
   .box_img {
     background: hsl(277, 64%, 61%) url("image-header-mobile.jpg") no-repeat  top;
     background-size: cover;
-  background-blend-mode: multiply;
+    background-blend-mode: multiply;
     height: 0;
     width: 100%;
     padding-top: 70%;
     border-radius: 15px 15px 0 0;
   }
-
 
   h1,
   h2,
@@ -176,31 +160,23 @@ h1,
     align-items: center;
     margin: 0;
   }
-
 }
 
 
-
-
 @media screen and (max-width: 364px) {
-
   .main_box {
     width: 85%;
     min-width: 300px;
   }
 
   .box_content {
-    padding: 10px;
-    
+    padding: 10px; 
   }
-
 
   h1,
   h2,
   .box_content p,
   .box_content_statistics {
     width: 100%;
-  
   }
-
 }
